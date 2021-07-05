@@ -30,6 +30,7 @@ function App() {
             </style>
             `,
             attributes: {
+                class: "fa fa-cube",
                 title: 'Insert Custom Button',
             }
         })
