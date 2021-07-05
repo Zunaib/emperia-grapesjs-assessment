@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import "grapesjs/dist/css/grapes.min.css";
 import './styles/main.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
