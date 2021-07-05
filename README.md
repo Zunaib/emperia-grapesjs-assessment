@@ -27,9 +27,9 @@
 5. Scroll down to find the **Assessment section** in blocks.
 6. Drag and drop the **Artwork Presenter Block** onto the canvas.
 7. Double click the black faded background to upload and select the background image _(from assets if you would like to)_
-8. Do the above step both for the **left container image** and the **logo**.
-   9 Proceed to fill in the text boxes and rephrase the text to your desire.
-9. Your template is now complete.
+8. Do the above step both for the **left container image** and the **logo**
+9. Proceed to fill in the text boxes and rephrase the text to your desire.
+10. Your template is now complete.
 
 ## Screenshots
 
