@@ -1,5 +1,6 @@
 import { Fragment, useEffect } from "react";
 import grapesjs from "grapesjs";
+import artworkPresenter from './blocks/ArtworkPresenter';
 import gjsPresetWebpage from "grapesjs-preset-webpage";
 import gjsBasicBlocks from "grapesjs-blocks-basic";
 import customButton from './components/CustomButton';
@@ -15,6 +16,8 @@ function App() {
 
         const blockManager = editor.BlockManager;
         blockManager.add('custom-btn', customButton)
+        blockManager.add('art-board', artworkPresenter)
+
     }, []);
 
 
