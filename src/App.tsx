@@ -2,6 +2,7 @@ import { Fragment, useEffect } from "react";
 import grapesjs from "grapesjs";
 import gjsPresetWebpage from "grapesjs-preset-webpage";
 import gjsBasicBlocks from "grapesjs-blocks-basic";
+import customButton from './components/CustomButton';
 
 
 function App() {
@@ -13,30 +14,7 @@ function App() {
         });
 
         const blockManager = editor.BlockManager;
-
-        blockManager.add('custom-btn', {
-            label: 'Button',
-            category: 'Custom',
-            content: `
-            <div class="custom-btn">
-                <div>Click Me</div>
-            </div>
-            <style>
-            .custom-btn{
-                width: fit-content;
-                background-color: lightgray;
-                padding: 10px 10px;
-            }
-            </style>
-            `,
-            attributes: {
-                class: "fa fa-cube",
-                title: 'Insert Custom Button',
-            }
-        })
-
-
-
+        blockManager.add('custom-btn', customButton)
     }, []);
 
 
