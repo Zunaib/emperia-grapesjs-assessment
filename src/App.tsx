@@ -21,11 +21,20 @@ function App() {
             <div class="custom-btn">
                 <div>Click Me</div>
             </div>
+            <style>
+            .custom-btn{
+                width: fit-content;
+                background-color: lightgray;
+                padding: 10px 10px;
+            }
+            </style>
             `,
             attributes: {
                 title: 'Insert Custom Button',
             }
         })
+
+
 
     }, []);
 
