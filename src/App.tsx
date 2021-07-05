@@ -7,10 +7,26 @@ import gjsBasicBlocks from "grapesjs-blocks-basic";
 function App() {
 
     useEffect(() => {
-        grapesjs.init({
+        const editor = grapesjs.init({
             container: "#editor",
             plugins: [gjsPresetWebpage, gjsBasicBlocks],
         });
+
+        const blockManager = editor.BlockManager;
+
+        blockManager.add('custom-btn', {
+            label: 'Button',
+            category: 'Custom',
+            content: `
+            <div class="custom-btn">
+                <div>Click Me</div>
+            </div>
+            `,
+            attributes: {
+                title: 'Insert Custom Button',
+            }
+        })
+
     }, []);
 
 
